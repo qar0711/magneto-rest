@@ -33,7 +33,7 @@ module.exports = {
 	// Custom metadata store. Store here what you want. Accessing: `this.broker.metadata`
 	metadata: {},
 
-	MONGO_URI: "qar",
+	MONGO_URI: "mongodb+srv://admin:1234@cluster0.4heun.mongodb.net/?retryWrites=true&w=majority",
 
 	// Enable/disable logging or use custom logger. More info: https://moleculer.services/docs/0.14/logging.html
 	// Available logger types: "Console", "File", "Pino", "Winston", "Bunyan", "debug", "Log4js", "Datadog"
