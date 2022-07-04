@@ -1,0 +1,14 @@
+{
+    "metadata": {
+        "version": "1"
+    },
+    "templates": [
+        
+        {
+            "path": "magneto",
+            "name": "magneto api - Node.js",
+            "description": "mercadolibre test"
+        }
+
+    ]
+}
