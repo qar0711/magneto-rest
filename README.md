@@ -1,7 +1,7 @@
 [![Moleculer](https://badgen.net/badge/Powered%20by/Moleculer/0e83cd)](https://moleculer.services)
 
 # api_xmen
-## _API useful for magneto for looking for titans_
+## _API useful by magneto to looking for titans_
 This is a [Moleculer](https://moleculer.services/)-based microservices project. Generated with the [Moleculer CLI](https://moleculer.services/docs/0.14/moleculer-cli.html).
 
 
@@ -13,6 +13,7 @@ On the welcome page you can test the generated services via API Gateway and chec
 Or if you want to test the API, use the next endpoint deployed 
 
 GET: https://magneto-api-node-js-1-6ujbcrxg2q-uc.a.run.app/api/stats
+
 POST: https://magneto-api-node-js-1-6ujbcrxg2q-uc.a.run.app/api/mutant
 
 #### Validate if some dna  is mutant
@@ -57,10 +58,10 @@ File                | % Stmts | % Branch | % Funcs | % Lines |
 --------------------|---------|----------|---------|---------|
 All files           |   91.35 |    84.21 |     100 |   90.78 |
  mixins             |      75 |       50 |     100 |      75 |
-  - db.mixin.js       |      75 |       50 |     100 |      75 | 
+ db.mixin.js        |      75 |       50 |     100 |      75 | 
  services           |   95.38 |    90.62 |     100 |      95 |
-  - helper.service.js |      96 |    92.85 |     100 |   95.65 | 
-  - mutant.service.js |   93.33 |       75 |     100 |   92.85 | 
+ helper.service.js  |      96 |    92.85 |     100 |   95.65 | 
+ mutant.service.js  |   93.33 |       75 |     100 |   92.85 | 
 
 
 ## NPM scripts
