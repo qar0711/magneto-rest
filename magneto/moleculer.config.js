@@ -106,7 +106,7 @@ module.exports = {
 		// Enable feature
 		enabled: false,
 		// Number of milliseconds to wait before shuting down the process.
-		shutdownTimeout: 5000,
+		shutdownTimeout: 500000,
 	},
 
 	// Disable built-in request & emit balancer. (Transporter must support it, as well.). More info: https://moleculer.services/docs/0.14/networking.html#Disabled-balancer

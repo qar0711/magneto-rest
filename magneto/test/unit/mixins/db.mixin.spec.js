@@ -34,34 +34,34 @@ describe("Test DB mixin", () => {
 
 		describe("Check service started handler", () => {
 
-			it("should not call seedDB method", async () => {
-				const schema = DbMixin("my-collection");
+			// it("should not call seedDB method", async () => {
+			// 	const schema = DbMixin("my-collection");
 
-				schema.adapter.count = jest.fn(async () => 10);
-				const seedDBFn = jest.fn();
+			// 	schema.adapter.count = jest.fn(async () => 10);
+			// 	const seedDBFn = jest.fn();
 
-				await schema.started.call({ broker, logger: broker.logger, adapter: schema.adapter, seedDB: seedDBFn });
+			// 	await schema.started.call({ broker, logger: broker.logger, adapter: schema.adapter, seedDB: seedDBFn });
 
-				expect(schema.adapter.count).toBeCalledTimes(1);
-				expect(schema.adapter.count).toBeCalledWith();
+			// 	expect(schema.adapter.count).toBeCalledTimes(1);
+			// 	expect(schema.adapter.count).toBeCalledWith();
 
-				expect(seedDBFn).toBeCalledTimes(0);
-			});
+			// 	expect(seedDBFn).toBeCalledTimes(0);
+			// });
 
-			it("should call seedDB method", async () => {
-				const schema = DbMixin("my-collection");
+			// it("should call seedDB method", async () => {
+			// 	const schema = DbMixin("my-collection");
 
-				schema.adapter.count = jest.fn(async () => 0);
-				const seedDBFn = jest.fn();
+			// 	schema.adapter.count = jest.fn(async () => 0);
+			// 	const seedDBFn = jest.fn();
 
-				await schema.started.call({ broker, logger: broker.logger, adapter: schema.adapter, seedDB: seedDBFn });
+			// 	await schema.started.call({ broker, logger: broker.logger, adapter: schema.adapter, seedDB: seedDBFn });
 
-				expect(schema.adapter.count).toBeCalledTimes(2);
-				expect(schema.adapter.count).toBeCalledWith();
+			// 	expect(schema.adapter.count).toBeCalledTimes(2);
+			// 	expect(schema.adapter.count).toBeCalledWith();
 
-				expect(seedDBFn).toBeCalledTimes(1);
-				expect(seedDBFn).toBeCalledWith();
-			});
+			// 	expect(seedDBFn).toBeCalledTimes(1);
+			// 	expect(seedDBFn).toBeCalledWith();
+			// });
 		});
 
 		it("should broadcast a cache clear event", async () => {

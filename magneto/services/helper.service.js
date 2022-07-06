@@ -1,7 +1,7 @@
 module.exports = {
     name: "helper",
     actions:{
-            async valid(ctx){
+            async validMatrix(ctx){
                 var matrix = ctx.params;
                 this.logger.info(matrix);
 
@@ -77,9 +77,6 @@ module.exports = {
     
     },
     events:{
-        "hello.called"(payload) {
-            this.logger.info("get in");
-            this.logger.info(payload);
-        }
+        
     }
 }
