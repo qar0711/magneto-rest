@@ -6,7 +6,7 @@
         
         {
             "path": "magneto",
-            "name": "magneto api - Node.js",
+            "name": "magneto api - Node.js - moleculer",
             "description": "mercadolibre test"
         }
 
